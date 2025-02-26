@@ -23,6 +23,7 @@ public class ProductController {
         productService.createProduct(productRequest);
     }
 
+    //getallAPI
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse>getAllProduct()
