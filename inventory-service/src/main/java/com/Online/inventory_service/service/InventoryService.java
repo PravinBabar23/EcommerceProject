@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class InventoryService {
 
-    private InventoryRepository inventoryRepository;
+    private final InventoryRepository inventoryRepository;
 
     @Transactional(readOnly = true)
     public List<InventoryResponse> isInStock(List<String> skuCode)
